@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/**
+ * Основные стили
+ **/
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  color: $purple;
+}
+
+.container {
+  @include min-max(320px, 100%, 0);
+}
+
+.wrap {
+  @include min-max(320px, 1675px, 0);
+}
+
+.general-padding {
+  padding: 0 20px;
+}
