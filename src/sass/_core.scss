@@ -5,9 +5,9 @@
  **/
 
 body {
-  font-family: "Nunito", sans-serif;
-  font-size: 16px;
-  color: $purple;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: $white;
 }
 
 .container {
@@ -20,4 +20,18 @@ body {
 
 .general-padding {
   padding: 0 20px;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: 700;
+}
+
+h2 {
+}
+
+h3 {
+  font-size: 30px;
+  letter-spacing: 3.8px;
+  font-weight: 200;
 }
