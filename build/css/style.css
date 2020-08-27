@@ -100,8 +100,38 @@ h1 {
 
 h3 {
     font-size: 30px;
-    letter-spacing: 3.8px;
     font-weight: 200;
+    color: #000;
+}
+
+.anchor {
+    color: #c4c4c4;
+    letter-spacing: 3.1px;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    letter-spacing: 3.1px;
+    color: #5b5b5c;
+}
+
+.btn {
+    font-size: 18px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 18px 82px;
+    display: inline-block;
+    -webkit-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.btn:hover {
+    background-color: rgba(221, 220, 220, 0.5);
 }
 
 .header {
@@ -275,28 +305,12 @@ h3 {
 }
 
 .header .header__wrap .header__main h3 {
+    letter-spacing: 3.8px;
     margin: 22px 0;
     -webkit-transition: all 0.6s;
     -o-transition: all 0.6s;
     transition: all 0.6s;
-}
-
-.header .header__wrap .header__main a {
-    font-size: 18px;
-    letter-spacing: 2.8px;
-    text-transform: uppercase;
-    text-decoration: none;
     color: #fff;
-    border: 2px solid #fff;
-    padding: 18px 82px;
-    display: inline-block;
-    -webkit-transition: all 300ms ease;
-    -o-transition: all 300ms ease;
-    transition: all 300ms ease;
-}
-
-.header .header__wrap .header__main a:hover {
-    background-color: rgba(221, 220, 220, 0.5);
 }
 
 @media (max-width: 1200px) {
@@ -412,5 +426,142 @@ h3 {
     .header .header__wrap .header__main a {
         padding: 10px 20px;
         font-size: 14px;
+    }
+}
+
+.about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 65px;
+    margin-bottom: 46px;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+.about .about__left {
+    -ms-flex-preferred-size: 49%;
+    flex-basis: 49%;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+.about .about__left .archor {
+    margin-bottom: 0;
+}
+
+.about .about__left h3 {
+    margin: 32px 0 55px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3.1px;
+}
+
+.about .about__left p {
+    margin-bottom: 58px;
+    letter-spacing: 3.3px;
+}
+
+.about .about__left .btn {
+    color: #000;
+    border-color: #000;
+}
+
+.about .about__left .btn:hover {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.about .about__right {
+    -ms-flex-preferred-size: 41%;
+    flex-basis: 41%;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+.about .about__right img {
+    width: 100%;
+    -webkit-box-shadow: 20px 20px 46px 1px rgba(0, 0, 0, 0.18);
+    box-shadow: 20px 20px 46px 1px rgba(0, 0, 0, 0.18);
+}
+
+@media (max-width: 1200px) {
+    .about .about__left h3 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .about .about__left {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about .about__left .btn {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .about .about__right {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+
+    .about .about__right img {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .about {
+        margin: 40px 0 30px;
+    }
+
+    .about .about__left .archor {
+        font-size: 20px;
+    }
+
+    .about .about__left h3 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .about .about__left p {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 550px) {
+    .about .about__left p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    .about .about__left p {
+        font-size: 16px;
+    }
+
+    .about .about__left .btn {
+        font-size: 16px;
+        padding: 15px;
     }
 }
