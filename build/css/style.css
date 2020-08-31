@@ -949,3 +949,111 @@ p {
         width: 79%;
     }
 }
+
+.next {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+.next .next__left {
+    -ms-flex-preferred-size: 41%;
+    flex-basis: 41%;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+.next .next__left img {
+    width: 100%;
+}
+
+.next .next__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-item-align: center;
+    align-self: center;
+    -ms-flex-preferred-size: 49%;
+    flex-basis: 49%;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+.next .next__right h2 {
+    margin: 32px 0 55px;
+}
+
+.next .next__right p {
+    margin-bottom: 58px;
+}
+
+@media (max-width: 1200px) {
+    .next .next__right h2 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .next .next__left {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+
+    .next .next__left img {
+        display: none;
+    }
+
+    .next .next__right {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .next {
+        margin: 40px 0 30px;
+    }
+
+    .next .next__right .archor {
+        font-size: 20px;
+    }
+
+    .next .next__right h2 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .next .next__right p {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 550px) {
+    .next .next__right p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    .next .next__right p {
+        font-size: 16px;
+    }
+}
