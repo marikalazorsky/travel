@@ -11,15 +11,8 @@
     align-self: center;
     transition: all 0.6s;
 
-    .archor {
-      margin-bottom: 0;
-    }
-
-    h3 {
+    h2 {
       margin: 32px 0 55px;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 3.1px;
     }
 
     p {
@@ -53,7 +46,7 @@
 @media (max-width: 1200px) {
   .about {
     .about__left {
-      h3 {
+      h2 {
         font-size: 25px;
       }
     }
@@ -91,7 +84,7 @@
         font-size: 20px;
       }
 
-      h3 {
+      h2 {
         font-size: 20px;
         margin-bottom: 30px;
       }

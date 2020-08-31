@@ -7,7 +7,17 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <title>Travel</title>
+    <!-- jQuery 1.8 or later, 33 KB -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <!-- Fotorama from CDNJS, 19 KB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script src="js/main.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -25,10 +35,13 @@
                   <a href="#" class="onhover"><span>Home</span></a>
                 </li>
                 <li>
-                  <a href="#" class="onhover"><span>About</span></a>
+                  <a href="#about" class="onhover"><span>About</span></a>
                 </li>
                 <li>
-                  <a href="#" class="onhover"><span>Travel</span></a>
+                  <a href="#gallery" class="onhover"><span>Gallery</span></a>
+                </li>
+                <li>
+                  <a href="#travel" class="onhover"><span>Travel</span></a>
                 </li>
               </ul>
             </nav>
@@ -43,8 +56,8 @@
 
       <div class="about wrap general-padding">
         <div class="about__left">
-          <span class="anchor">About us</span>
-          <h3>WE WILL TURN YOUR WORK INTO AN EXCITING JOURNEY.</h3>
+          <span class="anchor" id="about">About us</span>
+          <h2>WE WILL TURN YOUR WORK INTO AN EXCITING JOURNEY.</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus
@@ -64,6 +77,77 @@
         </div>
         <div class="about__right">
           <img src="../img/about.jpg" alt="img" />
+        </div>
+      </div>
+
+      <div class="gallery wrap general-padding">
+        <div class="gallery__top">
+          <span class="anchor" id="gallery">Gallery</span>
+          <h2>PHOTOS OF OUR TRAVELS</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore
+          </p>
+        </div>
+        <div
+          class="gallery__bottom fotorama"
+          data-loop="true"
+          data-nav="thumbs"
+        >
+          <a href="pic.jpg"><img src="../img/pic.jpg" alt="img_gallery" /></a>
+          <a href="pic2.jpg"><img src="../img/pic2.jpg" alt="img_gallery" /></a>
+          <a href="pic3.jpg"><img src="../img/pic3.jpg" alt="img_gallery" /></a>
+          <a href="pic4.jpg"><img src="../img/pic4.jpg" alt="img_gallery" /></a>
+          <a href="pic5.jpg"><img src="../img/pic5.jpg" alt="img_gallery" /></a>
+          <a href="pic6.jpg"><img src="../img/pic6.jpg" alt="img_gallery" /</a>>
+          <a href="pic7.jpg"><img src="../img/pic7.jpg" alt="img_gallery" /></a>
+          <a href="pic8.jpg"><img src="../img/pic8.jpg" alt="img_gallery" /></a>
+          <a href="pic9.jpg"><img src="../img/pic9.jpg" alt="img_gallery" /></a>
+          <a href="pic10.jpg"
+            ><img src="../img/pic10.jpg" alt="img_gallery"
+          /></a>
+          <a href="pic11.jpg"
+            ><img src="../img/pic11.jpg" alt="img_gallery"
+          /></a>
+          <a href="pic12.jpg"
+            ><img src="../img/pic12.jpg" alt="img_gallery"
+          /></a>
+          <a href="pic13.jpg"
+            ><img src="../img/pic13.jpg" alt="img_gallery"
+          /></a>
+        </div>
+      </div>
+
+      <div class="travel wrap">
+        <div class="travel__top">
+          <span class="anchor" id="travel">Travel</span>
+          <h2>TRAVEL WITH OUR COMPANY</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore
+          </p>
+        </div>
+        <div class="travel__bottom">
+          <div class="travel__block">
+            <img src="../img/travel.jpg" alt="travel" />
+            <h3>COMFORTABLE PREMIUM CLASS ACCOMMODATIONS</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+            <a class="btn" href="#">View Photos</a>
+          </div>
+          <div class="travel__block">
+            <img src="../img/travel2.jpg" alt="travel" />
+            <h3>WEEKLY GROUP ENTERTAINMENT AND EXCURSIONS</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+            <a class="btn" href="#">View Photos</a>
+          </div>
         </div>
       </div>
     </div>
