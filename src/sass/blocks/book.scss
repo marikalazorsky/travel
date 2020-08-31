@@ -1,0 +1,285 @@
+.book {
+  background-color: #f4f4f4;
+
+  .book__wrap {
+    padding: 155px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transition: all 0.6s;
+
+    .book__left {
+      flex-basis: 32%;
+      transition: all 0.6s;
+
+      h2 {
+        margin-bottom: 25px;
+        font-size: 28px;
+      }
+
+      span {
+        font-size: 18px;
+        letter-spacing: 2.5px;
+      }
+    }
+
+    .book__right {
+      flex-basis: 58%;
+      transition: all 0.6s;
+
+      form {
+        text-align: end;
+
+        input {
+          width: 300px;
+          border: 2px solid $dark-gray;
+          padding: 25px 30px;
+          font-size: 22px;
+          letter-spacing: 3.1px;
+          color: $black;
+          margin-right: 50px;
+          margin-bottom: 15px;
+          box-sizing: border-box;
+          transition: all 0.6s;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        .btn {
+          padding: 25px 85px;
+          color: $black;
+          border-color: $black;
+
+          &:hover {
+            color: $white;
+            background-color: rgba(0, 0, 0, 0.7);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1675px) {
+  .book {
+    .book__wrap {
+      .book__left {
+        h2 {
+          font-size: 26px;
+        }
+      }
+
+      .book__right {
+        flex-basis: 63%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1540px) {
+  .book {
+    .book__wrap {
+      .book__left {
+        h2 {
+          font-size: 24px;
+        }
+      }
+      .book__right {
+        form {
+          input {
+            margin-right: 30px;
+            width: 250px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1380px) {
+  .book {
+    .book__wrap {
+      .book__left {
+        h2 {
+          font-size: 22px;
+        }
+        span {
+          font-size: 16px;
+        }
+      }
+
+      .book__right {
+        flex-basis: 58%;
+
+        form {
+          input {
+            width: 200px;
+            font-size: 18px;
+            padding: 15px 30px;
+          }
+          .btn {
+            padding: 15px 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1290px) {
+  .book {
+    .book__wrap {
+      padding: 70px 20px;
+
+      .book__left {
+        flex-basis: 34%;
+
+        h2 {
+          font-size: 20px;
+          margin-bottom: 15px;
+        }
+      }
+
+      .book__right {
+        flex-basis: 58%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1145px) {
+  .book {
+    .book__wrap {
+      .book__left {
+        h2 {
+          letter-spacing: 3px;
+        }
+        span {
+          letter-spacing: 2px;
+        }
+      }
+      .book__right {
+        form {
+          input {
+            width: 180px;
+            padding: 15px 2 0px;
+          }
+
+          .btn {
+            font-size: 16px;
+            padding: 15px 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1070px) {
+  .book {
+    .book__wrap {
+      .book__left {
+        h2 {
+          letter-spacing: 2.5px;
+          margin-bottom: 10px;
+        }
+        span {
+          letter-spacing: 1.5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1040px) {
+  .book {
+    .book__wrap {
+      padding: 50px 20px;
+
+      .book__left {
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+
+      .book__right {
+        flex-basis: 100%;
+
+        form {
+          text-align: center;
+
+          input {
+            width: 300px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .book {
+    .book__wrap {
+      .book__right {
+        form {
+          input {
+            width: 250px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 755px) {
+  .book {
+    .book__wrap {
+      .book__right {
+        form {
+          input {
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 666px) {
+  .book {
+    .book__wrap {
+      .book__right {
+        form {
+          input {
+            width: 100%;
+          }
+          .btn {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 385px) {
+  .book {
+    .book__wrap {
+      .book__left {
+        h2 {
+          font-size: 16px;
+        }
+        span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
