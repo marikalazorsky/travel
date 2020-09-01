@@ -1,0 +1,147 @@
+.footer {
+  padding: 95px 20px;
+  transition: all 0.6s;
+
+  .footer__top {
+    transition: all 0.6s;
+
+    nav {
+      ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+          margin-right: 55px;
+          transition: all 0.6s;
+
+          a {
+            font-size: 22px;
+            letter-spacing: 3.1px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $black;
+            transition: all 0.6s;
+
+            &:hover {
+              border-bottom: 1px solid $black;
+              padding-bottom: 5px;
+            }
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+  .footer__bottom {
+    margin-top: 65px;
+    text-align: center;
+    transition: all 0.6s;
+
+    p {
+      font-size: 18px;
+      letter-spacing: 2.5px;
+      color: $black;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .spacing {
+      letter-spacing: 6.1px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer {
+    padding: 50px 20px;
+
+    .footer__top {
+      nav {
+        ul {
+          li {
+            a {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .footer__bottom {
+      margin-top: 40px;
+    }
+  }
+}
+
+@media (max-width: 666px) {
+  .footer {
+    .footer__top {
+      nav {
+        ul {
+          li {
+            margin-right: 30px;
+            a {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+
+    .footer__bottom {
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    .footer__top {
+      nav {
+        ul {
+          li {
+            margin-right: 15px;
+
+            a {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+
+    .footer__bottom {
+      p,
+      .spacing {
+        letter-spacing: 1.5px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .footer {
+    .footer__top {
+      nav {
+        ul {
+          flex-direction: column;
+          text-align: center;
+
+          li {
+            margin-bottom: 15px;
+
+            &:last-child {
+              margin-right: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
